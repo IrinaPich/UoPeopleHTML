@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3>1. Create an HTML document that displays the numbers 1
+        - 10, each number being a different color.</h3>
+    <p>
+        <span style="color:DodgerBlue;">1<span>
+                <span style="color:Red;">2</span>
+                <span style="color:Gold;">3</span>
+                <span style="color:Green;">4</span>
+                <span style="color:Tomato;">5</span>
+                <span style="color:DodgerBlue;">6</span>
+                <span style="color:Greenyellow;">7</span>
+                <span style="color:MediumSeaGreen;">8</span>
+                <span style="color:Brown;">9</span>
+                <span style="color:Pink;">10</span>
+    </p>
+    <h3>2. Create an HTML document that displays the squares of
+        the numbers 1 - 10. Each number should be on a
+        separate line, next to it the number 2 superscripted, an
+        equal sign and the result. (Example: 102 = 100)</h3>
+    <p id="squares"></p>
+    <script>
+        var resultText = "";
+        var i;
+        for (i = 1; i <= 10; i++) {
+            result = Math.pow(i, 2);
+            resultText += i + "<sup>2</sup> = " + result + "<br>";
+        }
+        document.getElementById("squares").innerHTML = resultText;
+    </script>
+    <h3>3. Create an HTML document that displays two lists with
+        any information you want. One list should be an
+        ordered list, the other list should be an unordered list</h3>
+    <h4>An ordered list</h4>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <h4>An unordered list</h4>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <h3>4. Create an HTML document that displays two addresses
+        in the same format used on the front of envelopes
+        (senders address in top left corner, receivers address in
+        the center). </h3>
+    <p align="left">
+        Dilbert H.<br>
+        1234 Anim Street<br>
+        P.O. Box 22222<br>
+    </p>
+    <p align="center">
+        Someone A. Person<br>
+        5555 Street Avenue<br>
+        Metrpolitan, Metropolis 11111<br>
+    </p>
+    <h3>5. Create a page with a link at the top of it that when
+        clicked will jump all the way to the bottom of the page.
+        At the bottom of the page there should be a link to
+        jump back to the top of the page. </h3>
+    <h4 id="link1">This is a top of the page.<br>The following is <a href="#link2">a link to the bottom of the page</a>
+    </h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non tempus diam. Phasellus dapibus eget erat a
+        luctus. Nam nisi ex, ornare sed lorem at, porttitor feugiat dolor. Nunc at elit ut neque sollicitudin lacinia.
+        Nulla imperdiet enim ut enim volutpat, vitae placerat ante porta. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Phasellus ullamcorper, eros eget rhoncus facilisis, lacus mauris
+        commodo est, id vehicula lorem purus quis risus. Nunc nunc sapien, pharetra quis suscipit pellentesque, bibendum
+        non risus. Duis congue aliquam ligula, eget rhoncus tellus faucibus fermentum. Pellentesque eget fermentum nunc.
+        Curabitur cursus interdum purus in ultrices. Aliquam eu rhoncus erat, sed tempor turpis.</p>
+    <p>Nam dignissim est nec facilisis mollis. Praesent et cursus lorem. Fusce vel enim dui. Integer id lacus arcu.
+        Integer urna quam, placerat ut accumsan et, feugiat nec est. Vivamus tristique orci eget lectus blandit, sed
+        interdum eros porttitor. Duis viverra nunc ac porta dapibus. Praesent nec iaculis sem. Duis malesuada consequat
+        facilisis. Integer mattis, nisl eget sollicitudin malesuada, tortor lectus commodo elit, vel sodales ligula
+        justo non ex. Vestibulum finibus velit ipsum, in imperdiet purus aliquam sed. Proin a ligula at quam
+        pellentesque rhoncus sed non tellus. Vestibulum elementum placerat nisl sit amet facilisis. Mauris quis velit
+        leo. Nam rhoncus libero ultricies elementum congue. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia Curae;</p>
+    <p>Ut tristique ligula sed sapien placerat, ac suscipit arcu blandit. Nunc euismod metus ut dui aliquet, a tincidunt
+        purus ultricies. Vivamus elementum massa venenatis justo blandit lobortis. In non nisl at justo aliquam
+        hendrerit non eget dui. Integer et sodales urna. Sed porta eu odio at luctus. Maecenas eu diam euismod, aliquet
+        neque id, pellentesque mauris. In cursus et mi sed sodales. Quisque fringilla laoreet velit et accumsan. Sed
+        placerat convallis magna vel suscipit. Etiam sed euismod risus. Mauris pretium faucibus neque at posuere.</p>
+    <p>Sed pulvinar leo vel elit luctus, eu efficitur nibh varius. Morbi vestibulum ex vitae metus finibus, vitae
+        aliquam ipsum sodales. Morbi tempor congue orci, nec sagittis libero pharetra in. Maecenas lacinia lobortis
+        libero. Sed in vehicula massa, in dapibus mauris. Sed mattis enim et vehicula molestie. In hac habitasse platea
+        dictumst. Aenean nec tincidunt metus, ut finibus elit. In fermentum sapien id magna rhoncus, quis ultricies
+        mauris efficitur. Aliquam varius quis dui nec consequat. Sed vitae varius dui, sed fermentum sapien.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Donec rutrum dictum quam, id maximus turpis vehicula et. Sed accumsan viverra facilisis. Nullam sit amet euismod
+        dui, eleifend scelerisque massa. Etiam sagittis orci eget lectus laoreet fermentum. Nam sem lorem, eleifend vel
+        erat quis, rhoncus vestibulum ante. Duis consectetur leo ac tincidunt pulvinar. Integer sed mauris blandit,
+        accumsan est vel, suscipit neque. Phasellus massa metus, finibus eget diam at, suscipit ullamcorper enim.
+        Curabitur vitae enim ut nisi tincidunt consectetur sed a enim. Quisque imperdiet vitae nulla a sodales. Proin
+        nulla est, elementum id dignissim vel, elementum quis tellus. Duis imperdiet at turpis eget tempus. Pellentesque
+        sit amet urna eleifend, lacinia arcu efficitur, fringilla turpis.</p>
+    <p>Nam scelerisque sed tortor eget rhoncus. Aliquam rhoncus est tortor, sed porta enim finibus in. In volutpat ex
+        orci. Nullam imperdiet tellus lorem, non rutrum erat vestibulum id. Phasellus quis dui mollis dolor mollis
+        maximus id vitae neque. Praesent sodales dictum fermentum. Nulla tincidunt tristique sagittis. Vestibulum in
+        iaculis tortor. Mauris fringilla arcu lectus, a iaculis elit luctus at. Quisque ac est lobortis, cursus purus
+        ac, mollis turpis. Ut neque turpis, fringilla eget mi et, pharetra condimentum dui.</p>
+    <p>Ut at leo et lorem dignissim aliquet. In eu pharetra nisl, nec suscipit neque. Donec rhoncus urna id ante cursus
+        malesuada. Donec sed pulvinar libero, eu interdum metus. Phasellus a dictum nibh, ac ultricies lectus. Etiam
+        quis metus quis velit auctor facilisis. Mauris euismod, ante quis maximus hendrerit, eros mi pretium est, ac
+        sagittis eros enim quis risus. Nullam leo dui, egestas ac arcu vel, interdum sodales augue. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fermentum porta aliquam. Cras
+        molestie nunc eu nisi luctus, ut cursus leo ullamcorper.</p>
+    <p>Praesent dignissim placerat sodales. Donec id dui tincidunt, iaculis urna quis, volutpat est. Etiam dignissim
+        efficitur ex, nec molestie ante mattis in. Nam sed ante vel nulla vulputate vestibulum vel ac libero. Vestibulum
+        mollis in ante vitae elementum. Vivamus vel lorem eros. Aenean condimentum lacinia est.</p>
+    <p>Praesent malesuada nibh elementum ultrices faucibus. Etiam dapibus vitae eros a pretium. Ut porttitor felis
+        sapien. Aenean facilisis nisl nec purus bibendum, sed faucibus tellus molestie. Nullam a pretium augue, sed
+        imperdiet ipsum. Phasellus mollis nisi ut euismod tincidunt. Cras congue ullamcorper mi, nec sagittis orci
+        vulputate eu. Nam mi nisi, pretium id sem ac, ultrices vestibulum lacus. Sed consequat tellus in convallis
+        mattis. Integer eget lorem est. Fusce at felis in dui facilisis aliquet. Proin nec eleifend felis. Cras vitae
+        posuere velit, id vulputate nisi. Vestibulum rhoncus ullamcorper nisl id vehicula.</p>
+    <p>Maecenas vitae libero magna. Fusce lorem lorem, egestas efficitur egestas eu, commodo nec tellus. Morbi venenatis
+        non mi et tristique. Morbi sit amet semper justo. Ut efficitur magna non ante condimentum tincidunt. Nulla quis
+        sapien leo. Etiam non massa justo. Nullam quis pretium mi. Sed commodo malesuada ipsum, mollis posuere lectus
+        rhoncus sit amet. Nam sed tristique tellus. Donec nec vehicula odio. Proin et viverra libero.</p>
+    <h4 id="link2">This is a bottom of the page.<br>Return to <a href="#link1">the top of the page</a>.</h4>
+
+    <h3>6. Create links to four different pages on four different
+        websites that should all open in a new window</h3>
+    <p><a href="http://w3schools.com/html/" target="_blank">3WSchool HTML tutorial</a></p>
+    <p><a href="http://www.w3.org/MarkUp/Guide/" target="_blank">W3C Getting started with HTML</a></p>
+    <p><a href="http://www.htmldog.com/guides/html/beginner/gettingstarted/" target="_blank">HTML Dog Getting
+            started</a></p>
+    <p><a href="http://html.net/tutorials/html/lesson3.php" target="_blank">HTML.net</a></p>
+
+    <h3>7. Display five different images. Skip two lines between
+        each image. Each image should have a title</h3>
+    <p>1. Abingdon-on-Thames, Oxfordshire, England, UK</p>
+    <img src="Abingdon 1.jpg" alt="Photo of Abingdon city center">
+    <br><br>
+    <p>2. Abingdon-on-Thames, Oxfordshire, England, UK</p>
+    <img src="Abingdon 2.jpg" alt="Photo of Abingdon city center">
+    <br><br>
+    <p>3. Abingdon-on-Thames, Oxfordshire, England, UK</p>
+    <img src="Abingdon 3.jpg" alt="Photo of Abingdon city center">
+    <br><br>
+    <p>4. Abingdon-on-Thames, Oxfordshire, England, UK</p>
+    <img src="Abingdon 4.jpg" alt="Photo of Abingdon city center">
+    <br><br>
+    <p>5. Abingdon-on-Thames, Oxfordshire, England, UK</p>
+    <img src="Abingdon 5.jpg" alt="Photo of Abingdon city center">
+
+    <h3>8. Display an image that has a border of size 2, a width of
+        200, and a height of 200</h3>
+    <img src="pub.jpg" alt=" Fuller's Pub and Restaurant in Croydon" style="width:200px;height:200px;" border="2">
+
+    <h3>9. Display an image that when clicked will link to itself and
+        will display the image in the browser by itself</h3>
+    <img src="storm.jpg" alt="Storm" usemap="#stormLink">
+
+    <map name="stormLink">
+        <area shape="default" href="storm.jpg">
+    </map>
+
+    <h3>10. Display an image that when clicked will link to a search
+        engine of your choice (should be opened in a new
+        window)</h3>
+    <img src="solar eclipse.jpg" alt="Solar eclipse" usemap="#solarEclipseLink">
+
+    <map name="solarEclipseLink">
+        <area shape="default" href="http://shorturl.at/dhmq1" target="_blank">
+    </map>
+
+    <h3>11. Pick 5 corporations and hunt down their current stock prices.
+        Place them in a neatly arranged table with their name,
+        symbol, last price, 52wk high, 52wk low and PE ratio. The end
+        result should look like the following. Notice that he frst
+        column is aligned left and the rest are centered.</h3>
+
+    <table style="width:100%" border="1">
+        <caption style="font-size:160%;"><b><i>My tech stock picks</i></b><br><br></caption>
+        <tr align="center">
+            <th>NAME</th>
+            <th>SYMBOL</th>
+            <th>CURRENT</th>
+            <th>52WK HI</th>
+            <th>52WK LO</th>
+            <th>P/E RATIO</th>
+        </tr>
+        <tr align="center">
+            <td align="left">Microsoft</td>
+            <td>MSFT</td>
+            <td>86-3/8</td>
+            <td>119-15/16</td>
+            <td>75-1/2</td>
+            <td>56.09</td>
+        </tr>
+        <tr align="center">
+            <td align="left">Cisco Systems</td>
+            <td>CSCO</td>
+            <td>72-1/8</td>
+            <td>82</td>
+            <td>24-13/16</td>
+            <td>400.69</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
